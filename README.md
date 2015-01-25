@@ -2,7 +2,7 @@ laravel-eos-cms
 ================
 
 ## What is EOS?
-EOS is An experimental PHP 5.4 CMS built on top of the Laravel framework. EOS is meant to be a Page Centric, lightweight, and flexible. The end goal is to allow developers to quickly turn an HTML mockup in to a live page quickly. 
+EOS is an experimental PHP 5.4 CMS built on top of the Laravel framework. EOS is meant to be Page Centric, lightweight, and flexible. The end goal is to allow developers to quickly turn an HTML mockup in to a live pages quickly.
 
 ### Immediate Goals
 * Finalize initial database schema prototypes for core components
