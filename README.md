@@ -6,7 +6,7 @@ EOS is an experimental PHP 5.4 CMS built on top of the Laravel framework. EOS is
 
 ### Immediate Goals
 * Finalize initial database schema prototypes for core components
-* Decide on robust user & access control authentication mechanisms -- Sentinal
+* Decide on robust user & access control authentication mechanisms
 
 
 ### Short Term Project Goals 

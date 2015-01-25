@@ -1,6 +1,7 @@
 <?php
 
 return array(
+
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -12,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -120,7 +121,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Sentinel\SentinelServiceProvider',
+
 	),
 
 	/*
