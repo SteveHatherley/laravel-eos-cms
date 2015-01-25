@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function()
+// Set Home Route
+ Route::get('/', array('as' => 'Home', function()
 {
-	return View::make('hello');
-});
+    return View::make('hello');
+}));

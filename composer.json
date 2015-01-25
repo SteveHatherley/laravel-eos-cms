@@ -3,13 +3,14 @@
 	"description": "EOS CMS.",
 	"keywords": ["framework", "laravel", "sentry", "cms", "blog"],
 	"license": "To be determined",
-    "authors": {
-            "name": "Steve Hatherley",
-            "email": "eos-dev@stevehatherley.com"
-    },
+    "authors": [
+            {"name": "Steve Hatherley",
+            "email": "eos-dev@stevehatherley.com"}
+    ],
 	"type": "project",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"rydurham/sentinel": "~1.4"
 	},
 	"autoload": {
 		"classmap": [
