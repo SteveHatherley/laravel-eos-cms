@@ -15,3 +15,20 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('/admin/login', function()
+{
+    return View::make('admin.login');
+});
+
+Route::group(array('prefix' => 'admin', 'before' => 'auth'), function(){
+        Route::get('/', function()
+        {
+            return View::make('admin.dashboard');
+        });
+
+        Route::get('/logout', function()
+        {
+            return View::make('admin.logout');
+        });        
+});
