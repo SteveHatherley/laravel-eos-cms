@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function()
 {
 	return View::make('hello');
@@ -30,5 +31,6 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function(){
         Route::get('/logout', function()
         {
             return View::make('admin.logout');
-        });        
+        });
+        
 });
