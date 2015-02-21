@@ -57,40 +57,49 @@
     <div class="container-fluid">
       <div class="row">
         <div id="leftnav_adminmain"  class="col-sm-3 col-md-2 sidebar">
-
-         <ul class="nav nav-header">
-         	<li class="active">
-         		<a href="#ln_dashboard" data-toggle="collapse" data-parent="#leftnav_adminmain">Dashboard</a>
-         	</li>
-         	        </ul>
-            <ul id="ln_dashboard" class="nav nav-sidebar-inner collapse">
-	            <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-	            <li class="active"><a href="#">Menu</a></li>
-	            <li><a href="#">Settings</a></li>
-            </ul>
-
-
-		<ul class="nav nav-header">
-			<li>
-				<a href="#ln_lookandfeel" data-toggle="collapse" data-parent="#leftnav_adminmain">Look &amp; Feel</a>
-			</li>
-			<ul id="ln_lookandfeel" class="nav nav-sidebar-inner collapse">
-		        <li><a href="">Templates</a></li>
-		        <li><a href="">Layouts</a></li>
-		        <li><a href="">Themes</a></li>
-		        <li><a href="">CSS Frameworks</a></li>
-		        <li><a href="">Typography</a></li>
-		        <li><a href="">Glyphs</a></li>
-		        <li><a href="">Emojii</a></li>
-		    </ul>
-		</ul>
-
-		</div>
+          @yield('admin.leftnav')
+		    </div>
 
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <!-- @(jumbotron)-->
+          <div class="jumbotron">
+            <h1>Manage your Content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+
+            
+              <div class="btn-group">
+                <button class="btn btn-primary btn-lg" type="button">
+                  Pages <span class="badge">0</span>
+                </button>
+              </div>
+
+              <div class="btn-group">
+                <button class="btn btn-primary btn" type="button">
+                  Plugins <span class="badge">0</span>
+                </button>
+              </div>
+
+              <div class="btn-group">
+                <button class="btn btn-primary btn-sm" type="button">
+                  Chunks <span class="badge">0</span>
+                </button>
+              </div>
+
+              <div class="btn-group">
+                <button class="btn btn-primary btn-xs" type="button">
+                  Chunks <span class="badge">0</span>
+                </button>
+              </div>
 
 
+          </div>
         </div>
       </div>
     </div>

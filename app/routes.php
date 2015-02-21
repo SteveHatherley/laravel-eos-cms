@@ -17,12 +17,25 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+
+// Route::get('/login', function(){
+//     return View:make('admin.login')
+// });
+
 Route::get('/admin/login', function()
 {
     return View::make('admin.login');
 });
 
+// @TODO: Move this to login protected area after admin dashboard has been mocked
+Route::get('/admin/home', function()
+{
+    return View::make('admin.dashboard');
+});
+
 Route::group(array('prefix' => 'admin', 'before' => 'auth'), function(){
+        
+
         Route::get('/', function()
         {
             return View::make('admin.dashboard');

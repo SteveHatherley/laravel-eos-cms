@@ -70,9 +70,10 @@ body {
   padding-left: 10px;
 }
 
-.nav-header{
-    background-color: #428bca;
+.nav-header {
+    background-color: #eee;
 }
+
 .nav-sidebar-inner > .active > a,
 .nav-sidebar-inner > .active > a:hover,
 .nav-sidebar-inner > .active > a:focus {
