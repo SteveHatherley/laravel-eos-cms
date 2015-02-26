@@ -1,4 +1,7 @@
-@extends('admin.master')
+@extends('admin.dashboard')
+
+@section('admin.leftnav')
+@overwrite
 
 @section('content')
 	{{ Form::open(array('url' => 'login')) }}

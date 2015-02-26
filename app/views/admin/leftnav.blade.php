@@ -3,10 +3,10 @@
     <a href="#ln_dashboard" data-toggle="collapse" data-parent="#leftnav_adminmain">Dashboard</a>
   </li>
 </ul>
-<ul id="ln_dashboard" class="nav nav-sidebar-inner collapse">
-  <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-  <li class="active"><a href="#">Menu</a></li>
-  <li><a href="#">Settings</a></li>
+<ul id="ln_dashboard" class="nav nav-sidebar-inner collapse open">
+  <li><a href="/admin/home">Home <span class="sr-only">(current)</span></a></li>
+  <li {{ (Request::is('/admin/menus') ? 'class="active"' : '') }}><a href="/admin/menus">Menu's</a></li>
+  <li><a href="/admin/settings">Settings</a></li>
 </ul>
 
             <ul class="nav nav-header">
@@ -14,14 +14,14 @@
                 <a href="#ln_lookandfeel" data-toggle="collapse" data-parent="#ln_lookandfeel">Look &amp; Feel</a>
               </li>
             </ul>
-            <ul id="ln_lookandfeel" class="nav nav-sidebar-inner collapse">
-                    <li><a href="">Templates</a></li>
-                    <li><a href="">Layouts</a></li>
-                    <li><a href="">Themes</a></li>
-                    <li><a href="">CSS Frameworks</a></li>
-                    <li><a href="">Typography</a></li>
-                    <li><a href="">Glyphs</a></li>
-                    <li><a href="">Emojii</a></li>
+            <ul id="ln_lookandfeel" class="nav nav-sidebar-inner ">
+                    <li class="active"><a href="/admin/templates">Templates</a></li>
+                    <li><a href="/admin/layouts">Layouts</a></li>
+                    <li><a href="/admin/themes">Themes</a></li>
+                    <li><a href="/admin/css">CSS Frameworks</a></li>
+                    <li><a href="/admin/typography">Typography</a></li>
+                    <li><a href="/admin/glyphs">Glyphs</a></li>
+                    <li><a href="/admin/emojii">Emojii</a></li>
             </ul>
 
          <ul class="nav nav-header">
@@ -30,9 +30,9 @@
             </li>
           </ul>
             <ul id="ln_content" class="nav nav-sidebar-inner collapse">
-              <li><a href="#">Pages <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Plugins</a></li>
-              <li><a href="#">Chunks</a></li>
+              <li><a href="/admin/pages">Pages <span class="sr-only">(current)</span></a></li>
+              <li><a href="/admin/plugins">Plugins</a></li>
+              <li><a href="/admin/chunks">Chunks</a></li>
             </ul>
 
          <ul class="nav nav-header">
@@ -41,6 +41,6 @@
             </li>
           </ul>
             <ul id="ln_other" class="nav nav-sidebar-inner collapse">
-              <li><a href="#">etc <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">etc</a></li>
+              <li><a href="/admin/">etc <span class="sr-only">(current)</span></a></li>
+              <li><a href="/admin/">etc</a></li>
             </ul>
